@@ -122,7 +122,7 @@ class CheckGraylogBuffers < Sensu::Plugin::Check::CLI
           postdata.to_json,
           content_type: :json,
           accept: :json,
-          x_requested_by: "sensu-client on #{settings['client']['name']}"
+          x_requested_by: "sensu-client"
         )
       )
     end
